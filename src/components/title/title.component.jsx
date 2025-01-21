@@ -2,7 +2,7 @@ import Tilt from "react-parallax-tilt";
 import pc from './pc-bg.png';
 const Title = () => {
     return (
-        <section className='flex flex-col-reverse	sm:flex-row gap-4 p-4 mt-40 lg:mt-80'>
+        <section className='flex flex-col-reverse sm:flex-row gap-4 p-4 mt-10 lg:mt-80'>
             <div className='sm:max-w-screen-md	'>
               <h1 className='text-4xl md:text-7xl'>Delivering Superior Services IT Solutions.</h1>
               <p className='mt-5'>treten Sie einfach mit uns in Kontakt.</p>
