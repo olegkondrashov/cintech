@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "all",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.7.1",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
+    "react-parallax-tilt": "^1.7.273",
+    "react-scripts": "^5.0.1",
     "react-tsparticles": "^2.12.2",
-    "@babel/plugin-proposal-private-property-in-object": "all"
+    "sass": "^1.83.4",
+    "tsparticles-path-polygon": "^2.12.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "all",
     "tailwindcss": "^3.4.16"
   }
 }
