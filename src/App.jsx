@@ -28,10 +28,10 @@ const App = () => {
           <MainBg />
           <Navigation isDark={isDark} className="z-10 text-green-800"/>
           <Title/>
-          <div className='flex flex-col items-center absolute bottom-5 left-2/4 -translate-x-1/2'>
+          <div className='flex flex-col items-center text-center mt-10 absolute bottom-5 left-2/4 -translate-x-1/2 w-full'>
             <a href="tel:+495323987427">Tel: 05323/987427</a> 
             <a href="mailto:info@cintech.de">E-Mail: info@cintech.de</a> 
-            <a href="https://maps.app.goo.gl/KFE247RZnst96SwV6">Gerhard-Rauschenbach-Straße 12 38678 Clausthal-Zellerfeld</a> 
+            <a href="https://maps.app.goo.gl/KFE247RZnst96SwV6">Gerhard-Rauschenbach-Straße 12 <br /> 38678 Clausthal-Zellerfeld</a> 
           </div>
         </main>
     </ThemeContext.Provider>

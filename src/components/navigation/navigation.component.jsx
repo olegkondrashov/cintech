@@ -20,13 +20,13 @@ const Navigation = ({isDark}) => {
     return (
         <nav className="flex items-center justify-between p-4 gap-5 z-100">
             <h4 className="text-xl font-bold z-10"><a href="/">Cintech GmbH</a></h4>
-            <ul className={`${menuOpen ? 'flex' : 'hidden'} sm:flex absolute top-20 left-0 sm:my-0 w-full sm:w-auto h-full sm:static flex-col sm:flex-row p-4 sm:p-0 justify-start sm:justify-around md:gap-10 gap-5 uppercase`}>
+            <ul className={`${menuOpen ? 'flex' : 'hidden'} z-10 backdrop-blur font-black text-2xl sm:flex absolute top-20 left-0 sm:my-0 w-full sm:w-auto h-full sm:static flex-col sm:flex-row p-4 sm:p-0 justify-start sm:justify-around md:gap-10 gap-5 uppercase`}>
                 <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:bottom-0 after:${greenOrWhite} after:w-full after:h-px`}><a href="/about">über uns</a></li>
                 <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:bottom-0 after:${greenOrWhite} after:w-full after:h-px`}><a href="/services">services</a></li>
                 <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:bottom-0 after:${greenOrWhite} after:w-full after:h-px`}><a href="/portfolio">portfolio</a></li>
                 <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:bottom-0 after:${greenOrWhite} after:w-full after:h-px`}><a href="/contact">kontakt</a></li>
             </ul>
-            <div className='flex'>
+            <div className='flex flex-row-reverse'>
                 <div onClick={toggleMenu} className="hamburger sm:hidden flex flex-col justify-evenly mx-5 py-2 gap-2 cursor-pointer">
                     <span className={`w-10 h-0.5 ${greenOrWhite}`}></span>
                     <span className={`w-10 h-0.5 ${greenOrWhite}`}></span>
