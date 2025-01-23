@@ -24,7 +24,7 @@ const Statistics = () => {
         <div className="text-5xl text-center">
           <CountUp
             start={0}
-            end={startCount ? 1000 : 0}
+            end={startCount ? 10000 : 0}
             duration={2}
             suffix="+"
           />
