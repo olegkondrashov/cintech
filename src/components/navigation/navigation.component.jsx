@@ -18,7 +18,7 @@ const Navigation = () => {
         <nav className="flex items-center justify-between p-4 gap-5  z-100 ">
             <h4 className="text-xl font-bold z-10"><a href="/">Cintech GmbH</a></h4>
             <ul className={`${menuOpen ? 'flex' : 'hidden'} backdrop-blur-md sm:backdrop-blur-none font-black sm:font-normal text-2xl sm:flex absolute top-20 left-0 sm:my-0 w-full sm:w-auto h-full sm:static flex-col sm:flex-row p-4 sm:p-0 justify-start sm:justify-around md:gap-10 gap-5 uppercase z-20`}>
-                <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/about">über uns</a></li>
+                <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/#about">über uns</a></li>
                 <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/services">services</a></li>
                 <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/portfolio">portfolio</a></li>
                 <li className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/contact">kontakt</a></li>

@@ -1,16 +1,16 @@
 
 import "./App.css"
+import About from "./components/about/about.component";
 import MainSection from './components/main-section/main-section.component';
+import Statistics from "./components/statistic/statistic.component";
 
 const App = () => {
 
     return (
       <>
         <MainSection />
-      
-        <section id="about" className="h-screen text-center pt-10">
-          <h2 className="text-5xl font-black">Über uns</h2>
-        </section>
+        <Statistics/>
+        <About/>
       </>
     )
 };
