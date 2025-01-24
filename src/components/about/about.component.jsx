@@ -8,7 +8,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="relative text-white overflow-hidden h-full md:h-[70vh]"
+            className="relative text-white overflow-hidden h-full lg:h-[70vh]"
             style={{
                 backgroundImage: `url(${bg})`,
                 backgroundRepeat: "no-repeat",
@@ -47,22 +47,22 @@ const About = () => {
                         als auch im B2B-Bereich zusammenarbeitet. Unser Team aus
                         Experten bietet umfassende Lösungen im Bereich Software-
                         und Hardware-Support, um Ihren Alltag und Ihr Business
-                        effizienter zu gestalten.
+                        effizienter zu gestalten. Hier sind ein paar Beispiele was wir machen:
                     </p>
 
                     <div className="mt-8 flex flex-wrap justify-center md:justify-start items-start gap-3">
                         {/* 4 “Buttons” ohne Funktion, nur Stil und Hover-Effekt */}
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200">
-                            Punkt 1
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                            Soft-&Hardware Problemlösung
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200">
-                            Punkt 2
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                            PC-Zusammenstellung
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200">
-                            Punkt 3
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                            Web-Entwicklung
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200">
-                            Punkt 4
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                            Netzwerklösungen
                         </div>
                     </div>
                 </div>
