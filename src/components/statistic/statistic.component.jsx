@@ -17,51 +17,51 @@ const Statistics = () => {
   }, [inView]);
 
   return (
-    <section className="flex bg-gray-900 text-white py-16 h-[30vh]" ref={ref}>
-      <div className="max-w-screen-xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">Computer gebaut</h2>
+    <section id="statistics" className="flex flex-col md:flex-row  gap-5 lg:gap-10 bg-gray-900 text-white py-16 h-full md:h-[30vh]" ref={ref}>
+      <div className="max-w-screen-xl  mx-auto px-4">
+        <h2 className="text-xl lg:text-4xl font-bold text-center mb-4 lg:mb-8">Computer gebaut</h2>
         
-        <div className="text-5xl text-center">
+        <div className="text-xl lg:text-5xl text-center">
           <CountUp
             start={0}
             end={startCount ? 10000 : 0}
-            duration={2}
+            duration={3}
             suffix="+"
           />
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">Websites entwickelt</h2>
+        <h2 className="text-xl lg:text-4xl font-bold text-center mb-4 lg:mb-8">Websites entwickelt</h2>
         
-        <div className="text-5xl text-center">
+        <div className="text-xl lg:text-5xl text-center">
           <CountUp
             start={0}
             end={startCount ? 162 : 0}
-            duration={2}
+            duration={3}
             suffix="+"
           />
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">Windows installiert</h2>
+        <h2 className="text-xl lg:text-4xl font-bold text-center mb-4 lg:mb-8">Windows installiert</h2>
         
-        <div className="text-5xl text-center">
+        <div className="text-xl lg:text-5xl text-center">
           <CountUp
             start={0}
-            end={startCount ? 3400 : 0}
-            duration={2}
+            end={startCount ? 15000 : 0}
+            duration={3}
             suffix="+"
           />
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">Viren gelöscht</h2>
+        <h2 className="text-xl lg:text-4xl font-bold text-center mb-4 lg:mb-8">Viren gelöscht</h2>
         
-        <div className="text-5xl text-center">
+        <div className="text-xl lg:text-5xl text-center">
           <CountUp
             start={0}
             end={startCount ? 99999 : 0}
-            duration={2}
+            duration={3}
             suffix="+"
           />
         </div>

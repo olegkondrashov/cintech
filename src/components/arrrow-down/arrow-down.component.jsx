@@ -3,7 +3,7 @@ import React from "react";
 const ScrollDownArrow = () => {
   return (
     <a
-      href="#about" 
+      href="#statistics" 
       className="flex flex-col items-center  w-max gap-2 text-gray-800 cursor-pointer hover:text-gray-600 mx-auto"
     >
       <span className="text-sm">Scroll Down</span>
