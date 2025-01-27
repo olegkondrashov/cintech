@@ -20,8 +20,7 @@ const Navigation = () => {
             <ul className={`${menuOpen ? 'flex' : 'hidden'} backdrop-blur-md sm:backdrop-blur-none font-black sm:font-normal text-2xl sm:flex absolute top-20 left-0 sm:my-0 w-full sm:w-auto h-full sm:static flex-col sm:flex-row p-4 sm:p-0 justify-start sm:justify-around md:gap-10 gap-5 uppercase z-20`}>
                 <li onClick={toggleMenu} className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/#statistics">über uns</a></li>
                 <li onClick={toggleMenu} className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/#services">services</a></li>
-                <li onClick={toggleMenu} className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/#portfolio">portfolio</a></li>
-                <li onClick={toggleMenu} className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/#contact">kontakt</a></li>
+                <li onClick={toggleMenu} className={`relative after:content-[''] hover:after:block after:hidden after:absolute after:-bottom-2 after:w-full after:h-px after:bg-blue-300`}><a href="/#contacts">kontakt</a></li>
             </ul>
             <div onClick={toggleMenu} className="hamburger sm:hidden flex flex-col justify-evenly mx-5 py-2 gap-2 cursor-pointer z-10">
                 <span className={`w-10 h-0.5 bg-white`}></span>

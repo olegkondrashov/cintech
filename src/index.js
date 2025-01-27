@@ -14,6 +14,7 @@ root.render(
       <ScrollToTop/>
       <Routes>
         <Route path='/' element={<App />}/>
+
         <Route path='impressum' element={<Impressum/>}/>
         <Route path='datenschutz' element={<Datenschutz/>}/>
 

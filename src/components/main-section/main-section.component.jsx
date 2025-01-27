@@ -16,7 +16,7 @@ const MainSection = () => {
             <BgDark/>
             <Navigation/>
             <Title/>
-            <ScrollDownArrow/>
+            <ScrollDownArrow link={"#statistics"}/>
         </main>
     )
 }

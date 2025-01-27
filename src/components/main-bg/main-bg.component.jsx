@@ -19,53 +19,85 @@ const MainBg = () => {
   };
 
   const options = {
-    background: {
-      // Your background image
-      image: "url(https://blog.it-planet.com/wp-content/uploads/2023/06/netzwerkserver-herzstueck-infrastruktur.jpg)",
-      size: "cover",
-      repeat: "no-repeat",
-      opacity: 1,
-    },
-    fullScreen: {
-      enable: true,
-      zIndex: -1,
-    },
-    particles: {
-      number: {
-        value: 60
-      },
-      shape: {
-        type: "circle"
-      },
-      color: {
-        value: "#00ff00"
-      },
-      links: {
-        enable: true,       // show linking lines
-        distance: 150,
-        color: { value: "#ffffff" },
-        opacity: 0.5,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 2,
-        outModes: {
-          default: "out"    // let them come back, not destroyed
+    autoPlay: true,
+        background: {
+          color: { value: "#e3e3e3" },
+          opacity: 1,
         },
-        // turn off the polygon path:
-        path: {
-          enable: false
+        backgroundMask: {
+          composite: "destination-out",
+          cover: {
+            opacity: 1,
+            color: { value: "" },
+          },
+          enable: false,
         },
-        trail: {
-          enable: true,
-          length: 20,
-          fill: {
-            color: { value: "#000000" }
-          }
-        }
-      }
-    }
+        clear: true,
+        fullScreen: { enable: true, zIndex: -1 },
+        detectRetina: true,
+        duration: 0,
+        fpsLimit: 120,
+        interactivity: {
+          detectsOn: "window",
+          events: {
+            onClick: { enable: false, mode: [] },
+            onHover: {
+              enable: true,
+              mode: "light",
+              parallax: { enable: false, force: 2, smooth: 10 },
+            },
+            resize: { delay: 0.5, enable: true },
+          },
+          modes: {
+            light: {
+              area: {
+                gradient: {
+                  start: { value: "#3b5e98" },
+                  stop: { value: "#17163e" },
+                },
+                radius: 1000,
+              },
+              shadow: {
+                color: { value: "#17163e" },
+                length: 2000,
+              },
+            },
+            // Add other modes as needed
+          },
+        },
+        particles: {
+          color: {
+            value: "#ff0000",
+            animation: {
+              h: { enable: true, speed: 20, sync: true },
+            },
+          },
+          number: {
+            density: { enable: true, width: 1920, height: 1080 },
+            value: 30,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            outModes: { default: "out" },
+          },
+          shape: {
+            type: ["circle", "square"],
+          },
+          size: {
+            value: { min: 15, max: 30 },
+          },
+          opacity: {
+            value: 1,
+          },
+        },
+        pauseOnBlur: true,
+        pauseOnOutsideViewport: true,
+        motion: {
+          disable: false,
+          reduce: { factor: 4, value: true },
+        },
   };
   
 
@@ -75,6 +107,7 @@ const MainBg = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        className="absolute -z-10"
       />
     );
   }

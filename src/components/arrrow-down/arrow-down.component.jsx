@@ -1,9 +1,9 @@
 import React from "react";
 
-const ScrollDownArrow = () => {
+const ScrollDownArrow = ({link}) => {
   return (
     <a
-      href="#statistics" 
+      href={`${link}`} 
       className="flex flex-col items-center  w-max gap-2 text-gray-800 cursor-pointer hover:text-gray-600 mx-auto"
     >
       <span className="text-sm">Scroll Down</span>

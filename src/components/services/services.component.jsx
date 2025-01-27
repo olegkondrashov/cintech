@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import AnimatedDots from "../animated-dots/animated-dots.component";
 
 import routing from '../../images/routing.webp';
@@ -9,6 +10,7 @@ import terminalserver from '../../images/terminalserver.webp';
 import webdev from '../../images/webdev.jpg';
 import camera from '../../images/camera.jpg';
 import data from '../../images/data.jpg';
+import ScrollDownArrow from "../arrrow-down/arrow-down.component";
 
 
 
@@ -188,10 +190,24 @@ const Services = () => {
                     </div>
                 </div>
 
-                <div className="w-full flex justify-center mt-20">
-                    <button onClick={cardLoader} className={`${isClicked ? "hidden" : "block"} relative rounded-full h-[50px] w-[50px] bg-blue-300 after:content-[''] after:w-[4px] after:h-[60%]  after:bg-neutral-50 after:absolute after:left-[50%] after:top-[20%] after:-translate-x-[50%] before:content-[''] before:w-[60%] before:h-[4px]  before:bg-neutral-50 before:absolute before:left-[20%] before:top-[50%] before:-translate-y-[50%]`}></button>
+                {
+                    isClicked ? 
+                    (
+                        <div className="flex flex-col items-center gap-10 w-full flex justify-center mt-20">
+                            <p className="block text-center">Kontaktieren Sie uns um professionelle Beratung zu bekommen</p>
+                            <ScrollDownArrow link={"#contacts"}/>
+                        </div>
+                    )
+                    
+                    :
+                    (
+                        <div className="w-full flex justify-center mt-20">
+                            <button onClick={cardLoader} className={`block relative rounded-full h-[50px] w-[50px] bg-blue-300 after:content-[''] after:w-[4px] after:h-[60%]  after:bg-neutral-50 after:absolute after:left-[50%] after:top-[20%] after:-translate-x-[50%] before:content-[''] before:w-[60%] before:h-[4px]  before:bg-neutral-50 before:absolute before:left-[20%] before:top-[50%] before:-translate-y-[50%]`}></button>
+                        </div>
 
-                </div>
+                    ) 
+                }
+
             </div>
         </section>
     );
