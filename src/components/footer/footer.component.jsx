@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
         <footer className="flex flex-col items-center bg-gray-900 text-white pt-10 md:pt-20 pb-5">
@@ -24,8 +26,8 @@ const Footer = () => {
             </div>
             
             <div className="flex gap-5 mt-10">
-                <a className="" href="/impressum">impressum</a>
-                <a className="" href="/datenschutz">datenschutz</a>
+                <Link to="/impressum">impressum</Link>
+                <Link to="/datenschutz">datenschutz</Link>
             </div>
         </footer>
     )

@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "all",
+    "react-router-dom": "^7.1.3",
     "tailwindcss": "^3.4.16"
   }
 }

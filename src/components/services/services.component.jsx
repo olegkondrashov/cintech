@@ -1,6 +1,17 @@
 import React, { useState } from "react";
 import AnimatedDots from "../animated-dots/animated-dots.component";
 
+import routing from '../../images/routing.webp';
+import firewall from '../../images/firewall.jpg';
+import domain from '../../images/domain.jpg';
+import printer from '../../images/printer.jpg';
+import terminalserver from '../../images/terminalserver.webp';
+import webdev from '../../images/webdev.jpg';
+import camera from '../../images/camera.jpg';
+import data from '../../images/data.jpg';
+
+
+
 const Services = () => {
 
     const [isClicked, setIsClicked] = useState(false)
@@ -22,157 +33,158 @@ const Services = () => {
                     <p className="text-gray-600 mt-2">
                         Wir erstellen Ihnen Einzelplatz- und Serversysteme auf allen Microsoft und UNIX-Plattformen, planen den Aufbau Ihrer Telekommunikationszentrale und kümmern uns um die Beschaffung Ihrer Verbrauchsmaterialien. Unseren Geschäftskunden bieten wir günstige Wartungsverträge mit Online- und Vor-Ort-Service an.
                     </p>
+                    <p className="text-center mt-10 font-black text-lg">Hier sind einige Beispiele:</p>
                 </div>
 
                 {/* Karten-Container */}
                 <div className="grid gap-8 md:grid-cols-4">
                     {/* Karte 1 */}
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-center mb-4">
-                            {/* Beispiel-Icon (kann durch SVG/Font-Icon ersetzt werden) */}
-                            <div className="text-4xl text-blue-300">
-                                <i className="fas fa-chart-line" />
-                            </div>
+                    <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
+                                        backgroundImage: `url(${routing})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover'}}>
+                        <div className="absolute top-0 left-0 h-full w-full bg-black rounded-xl  opacity-40 z-0">
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Interaktive Kapazitätsplanung
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                            Dramatisch wachsen durch benutzerzentrierte Lösungsansätze für IT-Ressourcen.
-                        </p>
-                        <button className="text-blue-300 font-semibold hover:text-blue-600">
-                            Mehr erfahren +
-                        </button>
+                        <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
+                            <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
+                                Routing 
+                            </h3>
+                            <p className="text-zinc-100 text-lg mb-4">
+                                diverser Glasfaser- und Kupferleitungen zwischen den verschiedenen Subnetzen
+                            </p>
+                        </div>
                     </div>
 
                     {/* Karte 2 */}
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-center mb-4">
-                            <div className="text-4xl text-blue-300">
-                                <i className="fas fa-cogs" />
-                            </div>
+                    <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
+                                        backgroundImage: `url(${firewall})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover'}}>
+                        <div className="absolute top-0 left-0 h-full w-full bg-black rounded-xl  opacity-40 z-0">
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Neue Technologiedienste
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                            Wir entwickeln modernste Technologiedienste für nachhaltige Wettbewerbsfähigkeit.
-                        </p>
-                        <button className="text-blue-300 font-semibold hover:text-blue-600">
-                            Mehr erfahren +
-                        </button>
+                        <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
+                            <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
+                                Firewall 
+                            </h3>
+                            <p className="text-zinc-100 text-lg mb-4">
+                                zentrale Firewall mit angepassten Filterregeln für die in Sicherheitsstufen definierten Subnetze
+                            </p>
+                        </div>
                     </div>
 
                     {/* Karte 3 */}
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-center mb-4">
-                            <div className="text-4xl text-blue-300">
-                                <i className="fas fa-cloud" />
-                            </div>
+                    <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
+                                        backgroundImage: `url(${domain})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover'}}>
+                        <div className="absolute top-0 left-0 h-full w-full bg-black rounded-xl  opacity-40 z-0">
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Cloud-Computing-Lösungen
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                            Skalierbare Cloud-Angebote für mehr Flexibilität und hohe Sicherheit.
-                        </p>
-                        <button className="text-blue-300 font-semibold hover:text-blue-600">
-                            Mehr erfahren +
-                        </button>
+                        <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
+                            <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
+                                Domain-Name-Service
+                            </h3>
+                            <p className="text-zinc-100 text-lg mb-4">
+                                für die verwalteten Netzwerkzonen (primärer & sekundärer DNS)
+                            </p>
+                        </div>
                     </div>
 
                     {/* Karte 4 */}
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-center mb-4">
-                            <div className="text-4xl text-blue-300">
-                                <i className="fas fa-laptop-code" />
-                            </div>
+                    <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
+                                        backgroundImage: `url(${webdev})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover'}}>
+                        <div className="absolute top-0 left-0 h-full w-full bg-black rounded-xl  opacity-40 z-0">
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Top-Informationstechnologie
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                            Moderne IT-Lösungen, die auf Qualität und Benutzerorientierung setzen.
-                        </p>
-                        <button className="text-blue-300 font-semibold hover:text-blue-600">
-                            Mehr erfahren +
-                        </button>
+                        <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
+                            <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
+                                Web-Entwicklung 
+                            </h3>
+                            <p className="text-zinc-100 text-lg mb-4">
+                                Ihre Ideen werden von uns entweder in Code oder in den Content-Management-Systemen TYPO3 und WordPress professionell umgesetzt.
+                            </p>
+                        </div>
                     </div>
+                    
                 </div>
 
                 {/* Karten-Container */}
-                <div className={`${isClicked ? "grid" : "hidden"} gap-8 md:grid-cols-4 mt-20`}>
+                <div className={`${isClicked ? "grid" : "hidden"} gap-8 md:grid-cols-4 mt-8`}>
                     {/* Karte 1 */}
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-center mb-4">
-                            {/* Beispiel-Icon (kann durch SVG/Font-Icon ersetzt werden) */}
-                            <div className="text-4xl text-blue-300">
-                                <i className="fas fa-chart-line" />
-                            </div>
+                    <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
+                                        backgroundImage: `url(${camera})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover'}}>
+                        <div className="absolute top-0 left-0 h-full w-full bg-black rounded-xl  opacity-40 z-0">
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Interaktive Kapazitätsplanung
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                            Dramatisch wachsen durch benutzerzentrierte Lösungsansätze für IT-Ressourcen.
-                        </p>
-                        <button className="text-blue-300 font-semibold hover:text-blue-600">
-                            Mehr erfahren +
-                        </button>
+                        <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
+                            <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
+                                Security Lösungen 
+                            </h3>
+                            <p className="text-zinc-100 text-lg mb-4">
+                                Ihre Sicherheit ist unser Fokus: Wir bieten innovative Kamera- und Sicherheitslösungen nach Maß.
+                            </p>
+                        </div>
                     </div>
+                    
 
                     {/* Karte 2 */}
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-center mb-4">
-                            <div className="text-4xl text-blue-300">
-                                <i className="fas fa-cogs" />
-                            </div>
+                    <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
+                                        backgroundImage: `url(${printer})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover'}}>
+                        <div className="absolute top-0 left-0 h-full w-full bg-black rounded-xl  opacity-40 z-0">
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Neue Technologiedienste
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                            Wir entwickeln modernste Technologiedienste für nachhaltige Wettbewerbsfähigkeit.
-                        </p>
-                        <button className="text-blue-300 font-semibold hover:text-blue-600">
-                            Mehr erfahren +
-                        </button>
+                        <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
+                            <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
+                                Printserver  
+                            </h3>
+                            <p className="text-zinc-100 text-lg mb-4">
+                                Common-Unix-Printing-System basierter Printserver zur Verwaltung aller Kopier- & Drucksysteme
+                            </p>
+                        </div>
                     </div>
 
                     {/* Karte 3 */}
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-center mb-4">
-                            <div className="text-4xl text-blue-300">
-                                <i className="fas fa-cloud" />
-                            </div>
+                    <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
+                                        backgroundImage: `url(${terminalserver})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover'}}>
+                        <div className="absolute top-0 left-0 h-full w-full bg-black rounded-xl  opacity-40 z-0">
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Cloud-Computing-Lösungen
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                            Skalierbare Cloud-Angebote für mehr Flexibilität und hohe Sicherheit.
-                        </p>
-                        <button className="text-blue-300 font-semibold hover:text-blue-600">
-                            Mehr erfahren +
-                        </button>
+                        <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
+                            <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
+                                Terminalserver 
+                            </h3>
+                            <p className="text-zinc-100 text-lg mb-4">
+                                ermöglicht den zentralen Zugriff auf Anwendungen und Ressourcen, indem mehrere Benutzer gleichzeitig über Remote-Verbindungen auf einen Server zugreifen können.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Karte 4 */}
-                    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
-                        <div className="flex items-center justify-center mb-4">
-                            <div className="text-4xl text-blue-300">
-                                <i className="fas fa-laptop-code" />
-                            </div>
+                    <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
+                                        backgroundImage: `url(${data})`,
+                                        backgroundRepeat: 'no-repeat',
+                                        backgroundPosition: 'center',
+                                        backgroundSize: 'cover'}}>
+                        <div className="absolute top-0 left-0 h-full w-full bg-black rounded-xl  opacity-40 z-0">
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                            Top-Informationstechnologie
-                        </h3>
-                        <p className="text-gray-600 mb-4">
-                            Moderne IT-Lösungen, die auf Qualität und Benutzerorientierung setzen.
-                        </p>
-                        <button className="text-blue-300 font-semibold hover:text-blue-600">
-                            Mehr erfahren +
-                        </button>
+                        <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
+                            <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
+                                BackUp 
+                            </h3>
+                            <p className="text-zinc-100 text-lg mb-4">
+                                Wir sorgen dafür, dass Ihre Daten sicher und jederzeit verfügbar sind – mit modernen Backup-Lösungen.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
