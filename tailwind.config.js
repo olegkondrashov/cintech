@@ -13,9 +13,32 @@ module.exports = {
           '55%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(100vw)' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        scroll: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          '100%': {
+            transform: 'translateX(-860%)',
+          }
+        },
+        scrollMd: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          '100%': {
+            transform: 'translateX(-165%)',
+          }
+        },
       },
       animation: {
         dotsMovement: 'dotsMovement 6s ease-in-out infinite',
+        marquee: 'marquee 30s linear infinite',
+        animateScroll: 'scroll 15s linear infinite',
+        animateScrollMd: 'scrollMd 15s linear infinite',
       },
     },
   },

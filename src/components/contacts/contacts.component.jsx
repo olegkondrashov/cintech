@@ -11,7 +11,7 @@ const Contacts = () => {
                     <h2 className="text-2xl font-bold text-gray-800 text-center uppercase mb-4">
                         Ansprechpartner
                     </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="flex flex-col md:flex-row items-center justify-evenly gap-6">
                         {/* Card: Andreas Wedler */}
                         <div className=" p-6 text-center md:text-left">
                             <h3 className="text-lg font-semibold text-gray-900 mb-1">
@@ -50,28 +50,6 @@ const Contacts = () => {
                                     className="text-blue-500 hover:underline"
                                 >
                                     m.schernell@cintech.biz
-                                </a>
-                            </p>
-                        </div>
-
-                        {/* Card: Oleh Kondrashov */}
-                        <div className="p-6 text-center md:text-left">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                                Oleh Kondrashov
-                            </h3>
-                            <p className="text-sm text-gray-600 mb-2">
-                                Azubi Fachinformatiker
-                            </p>
-                            <p className="text-gray-700 mb-1">
-                                <strong>Telefon:</strong> 05323/987427
-                            </p>
-                            <p className="text-gray-700">
-                                <strong>Mail:</strong>{" "}
-                                <a
-                                    href="mailto:oleh.k@cintech.biz"
-                                    className="text-blue-500 hover:underline"
-                                >
-                                    oleh.k@cintech.biz
                                 </a>
                             </p>
                         </div>

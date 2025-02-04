@@ -5,7 +5,7 @@ import AnimatedDots from "../animated-dots/animated-dots.component";
 import routing from '../../images/routing.webp';
 import firewall from '../../images/firewall.jpg';
 import domain from '../../images/domain.jpg';
-import printer from '../../images/printer.jpg';
+import activeDirectory from '../../images/active-directory.webp';
 import terminalserver from '../../images/terminalserver.webp';
 import webdev from '../../images/webdev.jpg';
 import camera from '../../images/camera.jpg';
@@ -137,7 +137,7 @@ const Services = () => {
 
                     {/* Karte 2 */}
                     <div className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition hover:scale-110 -z-1ß" style={{
-                                        backgroundImage: `url(${printer})`,
+                                        backgroundImage: `url(${activeDirectory})`,
                                         backgroundRepeat: 'no-repeat',
                                         backgroundPosition: 'center',
                                         backgroundSize: 'cover'}}>
@@ -145,10 +145,10 @@ const Services = () => {
                         </div>
                         <div className="relative min-h-[250px] h-full flex flex-col justify-between z-10">
                             <h3 className="text-xl font-bold text-blue-100 uppercase mb-2">
-                                Printserver  
+                                Active Directory
                             </h3>
                             <p className="text-zinc-100 text-lg mb-4">
-                                Common-Unix-Printing-System basierter Printserver zur Verwaltung aller Kopier- & Drucksysteme
+                                Mit unseren Active Directory-Lösungen ermöglichen wir eine strukturierte und sichere IT-Administration für Ihr Unternehmen.
                             </p>
                         </div>
                     </div>
