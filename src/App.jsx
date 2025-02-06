@@ -11,6 +11,7 @@ import Contacts from "./components/contacts/contacts.component";
 import Partners from "./components/partners/partners";
 import MicrosoftSolutions from "./components/microsoft-solutions/microsoft-solutions.component";
 import ArrowIcon from "./components/arrow-back/arrow-back.component";
+import Unilogo from "./components/unilogo/unilogo.component";
 
 const App = () => {
 
@@ -61,6 +62,7 @@ const App = () => {
 
         <MicrosoftSolutions/>
         <Partners/>
+        <Unilogo/>
         <Services />
 
 

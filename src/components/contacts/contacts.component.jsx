@@ -49,7 +49,7 @@ const Contacts = () => {
                                     href="mailto:m.schernell@cintech.biz"
                                     className="text-blue-500 hover:underline"
                                 >
-                                    m.schernell@cintech.biz
+                                    info@cintech.biz
                                 </a>
                             </p>
                         </div>

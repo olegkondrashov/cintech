@@ -67,6 +67,15 @@ const About = ({ aboutRef }) => {
                         <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
                             Netzwerklösungen
                         </div>
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                            Fahrzeugbeschriftungen
+                        </div>
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                            Banner
+                        </div>
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                            Beschilderungen
+                        </div>
                     </div>
                 </div>
             </div>
