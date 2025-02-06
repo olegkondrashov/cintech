@@ -1,10 +1,12 @@
+
+
 import BgDark from '../bg-dark/bg-dark.component';
 import bg from './bg.jpg';
 
 import img1 from './motherboard.jpg';
 
 
-const About = () => {
+const About = ({ aboutRef }) => {
     return (
         <section
             id="about"
@@ -15,6 +17,7 @@ const About = () => {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
             }}
+            ref={aboutRef}
         >
             {/* Optionaler Overlay für bessere Lesbarkeit */}
             <BgDark />
@@ -67,8 +70,10 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+            
         </section>
     )
-}
+};
 
 export default About;

@@ -6,7 +6,7 @@ import bg from './server.jpg'
 
 const MainSection = () => {
     return (
-        <main className='main scroll-smooth text-slate-300 flex flex-col justify-between h-screen relative md:px-10 lg:px-20 z-0'
+        <section className='main scroll-smooth text-slate-300 flex flex-col justify-between h-screen relative md:px-10 lg:px-20 z-0'
                 style={{
                     backgroundImage: `url(${bg})`,
                     backgroundRepeat: 'no-repeat',
@@ -17,7 +17,7 @@ const MainSection = () => {
             <Navigation/>
             <Title/>
             <ScrollDownArrow link={"#statistics"}/>
-        </main>
+        </section>
     )
 }
 

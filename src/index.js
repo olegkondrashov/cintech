@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './index.css';
 import App from './App';
-import Impressum from './pages/impressum.page';
+import Impressum from './pages/impressum/impressum.page';
 import ScrollToTop from './components/scroll-to-top/scroll-to-top.component';
-import Datenschutz from './components/datenschutz/datenschutz.component';
+import Datenschutz from './pages/datenschutz/datenschutz.component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

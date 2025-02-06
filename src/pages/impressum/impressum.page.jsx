@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ArrowIcon from "../components/arrow-back/arrow-back.component";
-import Footer from "../components/footer/footer.component";
+import ArrowIcon from "../../components/arrow-back/arrow-back.component";
+import Footer from "../../components/footer/footer.component";
 
 const Impressum = () => {
   return (
@@ -9,7 +9,7 @@ const Impressum = () => {
       <section className="w-full bg-gray-50 py-10">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-20">
-          <Link className="flex items-center gap-5 text-4xl font-black" to={"/"}><ArrowIcon/> Zurück zur Homepage</Link>
+          <Link className="flex items-center gap-5 text-4xl font-black" to={"/"}><ArrowIcon rotateDeg={180}/> Zurück zur Homepage</Link>
         </div>
         {/* Hauptüberschrift */}
         <h1 className="text-3xl font-bold text-gray-800 mb-6">Impressum</h1>

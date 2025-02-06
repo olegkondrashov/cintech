@@ -1,8 +1,8 @@
 import React from "react";
 
-const ArrowIcon = () => {
+const ArrowIcon = ({rotateDeg}) => {
   return (
-    <svg className="rotate-180"
+    <svg style={{transform: `rotate(${rotateDeg}deg)`}}
       fill="#000000"
       height="50px"
       width="50px"
