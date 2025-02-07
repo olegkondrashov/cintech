@@ -11,7 +11,7 @@ const Contacts = () => {
                     <h2 className="text-2xl font-bold text-gray-800 text-center uppercase mb-4">
                         Ansprechpartner
                     </h2>
-                    <div className="flex flex-col md:flex-row items-center justify-evenly gap-6">
+                    <div className="flex flex-col md:flex-row items-start justify-evenly gap-6">
                         {/* Card: Andreas Wedler */}
                         <div className=" p-6 text-center md:text-left">
                             <h3 className="text-lg font-semibold text-gray-900 mb-1">
@@ -35,21 +35,18 @@ const Contacts = () => {
                         {/* Card: Matthias Schernell */}
                         <div className="p-6 text-center md:text-left">
                             <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                                Matthias Schernell
+                                IT-Abteilung
                             </h3>
-                            <p className="text-sm text-gray-600 mb-2">
-                                Azubi Fachinformatiker
-                            </p>
                             <p className="text-gray-700 mb-1">
                                 <strong>Telefon:</strong> 05323/987427
                             </p>
                             <p className="text-gray-700">
                                 <strong>Mail:</strong>{" "}
                                 <a
-                                    href="mailto:m.schernell@cintech.biz"
+                                    href="mailto:info@cintech.de"
                                     className="text-blue-500 hover:underline"
                                 >
-                                    info@cintech.biz
+                                    info@cintech.de
                                 </a>
                             </p>
                         </div>
