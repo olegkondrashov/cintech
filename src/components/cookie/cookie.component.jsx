@@ -5,11 +5,10 @@ const CookieConsent = () => {
   const [showConsentModal, setShowConsentModal] = useState(false);
   // Anzeige des Optionsfensters
   const [showOptions, setShowOptions] = useState(false);
-  // Cookie-Einstellungen für verschiedene Kategorien
+  // Cookie-Einstellungen: Funktionale Cookies sind immer erforderlich (true)
   const [cookieSettings, setCookieSettings] = useState({
     analytics: false,
     marketing: false,
-    // Funktionale Cookies sind für den Betrieb der Website notwendig
     functional: true,
   });
 
@@ -18,7 +17,7 @@ const CookieConsent = () => {
     if (!storedConsent) {
       setShowConsentModal(true);
     } else {
-      // Falls bereits eine Entscheidung getroffen wurde, laden wir die gespeicherten Einstellungen
+      // Bereits getroffene Entscheidung laden
       const parsedConsent = JSON.parse(storedConsent);
       if (parsedConsent.settings) {
         setCookieSettings(parsedConsent.settings);
@@ -26,7 +25,7 @@ const CookieConsent = () => {
     }
   }, []);
 
-  // Funktion bei Zustimmung: Alle Cookie-Kategorien werden auf true gesetzt
+  // Bei Zustimmung: Alle Cookie-Kategorien werden aktiviert
   const handleAccept = () => {
     const acceptedSettings = {
       analytics: true,
@@ -38,29 +37,36 @@ const CookieConsent = () => {
     setShowConsentModal(false);
   };
 
-  // Funktion bei Ablehnung: Optionale Cookies werden nicht aktiviert
+  // Bei Ablehnung: Nur die erforderlichen (funktionalen) Cookies bleiben aktiv
   const handleReject = () => {
-    localStorage.setItem('cookieConsent', JSON.stringify({ consent: false, settings: {} }));
+    const rejectedSettings = {
+      analytics: false,
+      marketing: false,
+      functional: true,
+    };
+    setCookieSettings(rejectedSettings);
+    localStorage.setItem('cookieConsent', JSON.stringify({ consent: false, settings: rejectedSettings }));
     setShowConsentModal(false);
   };
 
   // Wechseln zwischen Anzeige und Ausblenden des Optionsfensters
   const toggleOptions = () => {
-    setShowOptions(prev => !prev);
+    setShowOptions((prev) => !prev);
   };
 
-  // Änderung einzelner Cookie-Einstellungen (im Optionsfenster)
+  // Änderung der nicht erforderlichen Cookie-Einstellungen
   const handleSettingChange = (e) => {
     const { name, checked } = e.target;
-    setCookieSettings(prev => {
+    // Funktionale Cookies sind zwingend aktiv – daher ignorieren wir Änderungen
+    if (name === 'functional') return;
+    setCookieSettings((prev) => {
       const updatedSettings = { ...prev, [name]: checked };
-      // Aktualisieren der Einstellungen im Local Storage
       localStorage.setItem('cookieConsent', JSON.stringify({ consent: true, settings: updatedSettings }));
       return updatedSettings;
     });
   };
 
-  // Speichern der angepassten Einstellungen (wenn der Nutzer Änderungen vornimmt)
+  // Speichern der geänderten Einstellungen
   const saveSettings = () => {
     localStorage.setItem('cookieConsent', JSON.stringify({ consent: true, settings: cookieSettings }));
     setShowOptions(false);
@@ -107,7 +113,7 @@ const CookieConsent = () => {
         </div>
       )}
 
-      {/* Optionsfenster für Cookie-Einstellungen */}
+      {/* Optionsfenster zur Anpassung der Cookie-Einstellungen */}
       {showOptions && (
         <div className="fixed bottom-20 left-5 bg-white border border-gray-300 p-4 rounded-md z-40 w-72 shadow">
           <h4 className="text-lg font-semibold mb-3">Cookie Einstellungen</h4>
