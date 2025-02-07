@@ -4,7 +4,7 @@ import AnimatedDots from "../animated-dots/animated-dots.component";
 
 import routingImg from '../../images/routing.webp';
 import firewallImg from '../../images/firewall.jpg';
-import domainImg from '../../images/domain.jpg';
+import pcImg from '../../images/computer.jpg';
 import activeDirectoryImg from '../../images/active-directory.webp';
 import terminalserverImg from '../../images/terminalserver.webp';
 import webdevImg from '../../images/webdev.jpg';
@@ -36,10 +36,10 @@ const Services = () => {
           "img": firewallImg
         },
         {
-          "id": "domain",
-          "name": "Domain-Name-Service",
-          "description": "für die verwalteten Netzwerkzonen (primärer & sekundärer DNS)",
-          "img": domainImg
+          "id": "PCZusammenstellung",
+          "name": "PC-Zusammenstellung",
+          "description": "Wir bieten maßgeschneiderte PC‑Zusammenstellungen, die optimal auf Ihre individuellen Leistungsanforderungen und Bedürfnisse abgestimmt sind.",
+          "img": pcImg
         },
         {
           "id": "webEntwicklung",

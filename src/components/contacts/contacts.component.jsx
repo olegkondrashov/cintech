@@ -11,7 +11,7 @@ const Contacts = () => {
                     <h2 className="text-2xl font-bold text-gray-800 text-center uppercase mb-4">
                         Ansprechpartner
                     </h2>
-                    <div className="flex flex-col md:flex-row items-start justify-evenly gap-6">
+                    <div className="flex flex-col md:flex-row items-center md:items-start justify-evenly gap-6">
                         {/* Card: Andreas Wedler */}
                         <div className=" p-6 text-center md:text-left">
                             <h3 className="text-lg font-semibold text-gray-900 mb-1">
