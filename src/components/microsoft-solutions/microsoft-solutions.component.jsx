@@ -10,7 +10,7 @@ const MicrosoftSolutions = () => {
         </h2>
 
         {/* Infotext */}
-        <p className="text-gray-700 leading-relaxed mb-8">
+        <p className="text-center text-gray-700 leading-relaxed mb-8">
           Wir sind stolz darauf, als autorisierter Microsoft-Partner auftreten zu
           dürfen. Durch unsere enge Zusammenarbeit mit Microsoft können wir Ihnen
           maßgeschneiderte Lösungen anbieten, die Ihre Geschäftsprozesse

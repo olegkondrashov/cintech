@@ -10,7 +10,7 @@ const Unilogo = () => {
         </h2>
 
         {/* Infotext */}
-        <p className="text-gray-700 leading-relaxed mb-8">
+        <p className="text-center text-gray-700 leading-relaxed mb-8">
           Entdecken Sie unsere innovativen Lösungen für individuelle Werbebeschriftungen und Beschilderungen. Mit kreativen Designs und modernster Technik setzen wir Ihre Marke in Szene – ob mobil oder stationär.
         </p>
 

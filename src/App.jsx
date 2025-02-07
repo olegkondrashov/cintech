@@ -12,6 +12,7 @@ import Partners from "./components/partners/partners";
 import MicrosoftSolutions from "./components/microsoft-solutions/microsoft-solutions.component";
 import ArrowIcon from "./components/arrow-back/arrow-back.component";
 import Unilogo from "./components/unilogo/unilogo.component";
+import CookieConsent from "./components/cookie/cookie.component";
 
 const App = () => {
 
@@ -68,6 +69,7 @@ const App = () => {
 
         <Contacts/>
         <Footer  footerRef={footerRef} />
+        <CookieConsent/>
 
         {/* Our arrow is rendered exactly ONCE, but only visible if showArrow  === true */}
         {showArrow  && (
