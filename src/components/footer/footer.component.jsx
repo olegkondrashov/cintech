@@ -7,7 +7,7 @@ const Footer = ({ footerRef }) => {
             <div className="flex flex-col lg:flex-row justify-evenly w-full px-2 md:px-10 flex-wrap gap-5 text-center md:text-left">
                 
                 <div className="flex flex-col">
-                    <h2 className="text-4xl md:text-5xl mb-10">Kontakte</h2>
+                    <h2 className="text-4xl uppercase  md:text-5xl mb-10">Kontakte</h2>
                     <div className="flex flex-col gap-2 text-lg">
                         <a href="tel:+495323987427">Tel: 05323/987427</a>
                         <a href="mailto:info@cintech.de">E-Mail: info@cintech.de</a>
@@ -15,10 +15,18 @@ const Footer = ({ footerRef }) => {
                     </div>
                 </div>
                 <div>
-                    <h2 className="text-4xl md:text-5xl mb-10">Öffnungszeiten</h2>
+                    <h2 className="text-4xl uppercase  md:text-5xl mb-10">Öffnungszeiten</h2>
                     <div className="flex flex-col gap-2 text-lg">
                         <h4>Montag - Freitag</h4>
                         <p>08:00 - 17:00</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 className="text-4xl uppercase  md:text-5xl mb-10">Wir bilden aus</h2>
+                    <div className="flex flex-col gap-2 text-lg">
+                        <h4>Fachinformatiker</h4>
+                        <p>IT-Systemkauffrau/mann</p>
+                        <p>Bürokauffrau/mann</p>
                     </div>
                 </div>
                 <div className="w-full md:w-[300px] mt-10 md:mt-0">
