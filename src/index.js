@@ -13,8 +13,8 @@ root.render(
   <React.StrictMode>
 
       <BrowserRouter>
-        <ScrollToTop/>
-            <Routes>
+          <ScrollToTop/>
+          <Routes>
             <Route path='/' element={<App />}/>
 
             <Route path='impressum' element={<Impressum/>}/>

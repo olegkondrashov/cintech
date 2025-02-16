@@ -17,8 +17,8 @@ const Statistics = () => {
   }, [inView]);
 
   return (
-    <section id="statistics" className="flex flex-col md:flex-row  gap-5 lg:gap-10 bg-gray-900 text-white py-16 h-full md:h-[30vh]" ref={ref}>
-      <div className="max-w-screen-xl  mx-auto px-4">
+    <section id="statistics" className="flex flex-col md:flex-row  gap-5 lg:gap-10 bg-gray-900 text-white py-16 h-full md:min-h-[30vh]" ref={ref}>
+      <div className="max-w-screen-xl flex flex-col justify-center mx-auto px-4">
         <h2 className="text-xl lg:text-4xl font-bold text-center mb-4 lg:mb-8">Computer gebaut</h2>
         
         <div className="text-xl lg:text-5xl text-center">
@@ -30,7 +30,7 @@ const Statistics = () => {
           />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl flex flex-col justify-center mx-auto px-4">
         <h2 className="text-xl lg:text-4xl font-bold text-center mb-4 lg:mb-8">Websites entwickelt</h2>
         
         <div className="text-xl lg:text-5xl text-center">
@@ -42,7 +42,7 @@ const Statistics = () => {
           />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl flex flex-col justify-center mx-auto px-4">
         <h2 className="text-xl lg:text-4xl font-bold text-center mb-4 lg:mb-8">Windows installiert</h2>
         
         <div className="text-xl lg:text-5xl text-center">
@@ -54,7 +54,7 @@ const Statistics = () => {
           />
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl flex flex-col justify-center mx-auto px-4">
         <h2 className="text-xl lg:text-4xl font-bold text-center mb-4 lg:mb-8">Viren gelöscht</h2>
         
         <div className="text-xl lg:text-5xl text-center">

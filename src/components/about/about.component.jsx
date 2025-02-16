@@ -10,7 +10,7 @@ const About = ({ aboutRef }) => {
     return (
         <section
             id="about"
-            className="relative text-white overflow-hidden h-full lg:h-[70vh]"
+            className="relative text-white overflow-hidden h-full lg:min-h-[70vh]"
             style={{
                 backgroundImage: `url(${bg})`,
                 backgroundRepeat: "no-repeat",
@@ -30,7 +30,7 @@ const About = ({ aboutRef }) => {
       */}
             <div className="relative mt-20 z-10 mx-auto max-w-screen-xl px-4 py-16 flex flex-col md:flex-row items-start md:items-center gap-10 md:gap-16">
 
-                <div className="flex flex-col gap-4 w-full md:w-1/2 items-center justify-center">
+                <div className="flex flex-col gap-4 w-full md:w-1/3 items-center justify-center">
                     <div className="w-full h-96 overflow-hidden relative group rounded-lg shadow-lg">
                         <img
                             src={img1}
@@ -41,7 +41,7 @@ const About = ({ aboutRef }) => {
                 </div>
 
                 {/* Rechte Spalte: Titel, Text, 4 “Buttons” */}
-                <div className="w-full md:w-1/2 text-center md:text-left">
+                <div className="w-full md:w-2/3 text-center md:text-left">
                     <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-tight ">
                         Über uns
                     </h2>
@@ -55,25 +55,25 @@ const About = ({ aboutRef }) => {
 
                     <div className="mt-8 flex flex-wrap justify-center md:justify-start items-start gap-3">
                         {/* 4 “Buttons” ohne Funktion, nur Stil und Hover-Effekt */}
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full md:w-max text-center">
                             Soft-&Hardware Problemlösung
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full md:w-max text-center">
                             PC-Zusammenstellung
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full md:w-max text-center">
                             Web-Entwicklung
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full md:w-max text-center">
                             Netzwerklösungen
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full md:w-max text-center">
                             Fahrzeugbeschriftungen
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full md:w-max text-center">
                             Banner
                         </div>
-                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full lg:w-max text-center">
+                        <div className="px-5 py-2 bg-black/50 hover:bg-neutral-700 rounded-lg cursor-pointer transition-colors duration-200 w-full md:w-max text-center">
                             Beschilderungen
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = ({ footerRef }) => {
     return (
         <footer ref={footerRef} className="relative flex flex-col items-center bg-gray-900 text-white pt-10 md:pt-20 pb-5">
-            <div className="flex flex-col lg:flex-row justify-evenly w-full px-2 md:px-10 flex-wrap gap-5 text-center md:text-left">
+            <div className="flex flex-col items-center lg:flex-row justify-evenly w-full px-2 md:px-10 flex-wrap gap-10 text-center lg:text-left">
                 
                 <div className="flex flex-col">
                     <h2 className="text-4xl uppercase  md:text-5xl mb-10">Kontakte</h2>
