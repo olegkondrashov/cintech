@@ -15,9 +15,9 @@ const Unilogo = () => {
         </p>
 
         {/* Details */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap gap-8">
           {/* Fahrzeugbeschriftungen */}
-          <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+          <div className="lg:max-w-[30%] bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
             <div className="text-4xl text-blue-600 mb-4">
               <i className="fas fa-car"></i>
             </div>
@@ -30,7 +30,7 @@ const Unilogo = () => {
           </div>
 
           {/* Beschilderungen */}
-          <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+          <div className="lg:max-w-[30%] bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
             <div className="text-4xl text-blue-600 mb-4">
               <i className="fas fa-map-signs"></i>
             </div>
@@ -43,7 +43,7 @@ const Unilogo = () => {
           </div>
 
           {/* Banner */}
-          <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+          <div className="lg:max-w-[30%] bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
             <div className="text-4xl text-blue-600 mb-4">
               <i className="fas fa-image"></i>
             </div>

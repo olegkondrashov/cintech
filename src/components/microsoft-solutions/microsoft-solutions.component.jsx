@@ -19,9 +19,9 @@ const MicrosoftSolutions = () => {
         </p>
 
         {/* Details (Beispiele, Icons etc.) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap gap-8">
           {/* Beispiel-Kachel 1 */}
-          <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+          <div className="lg:max-w-[30%] bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
             <div className="text-4xl text-blue-600 mb-4">
               {/* Beispiel-Icon, kann durch SVG oder anderes Icon ersetzt werden */}
               <i className="fab fa-microsoft"></i>
@@ -37,7 +37,7 @@ const MicrosoftSolutions = () => {
           </div>
 
           {/* Beispiel-Kachel 2 */}
-          <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+          <div className="lg:max-w-[30%] bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
             <div className="text-4xl text-blue-600 mb-4">
               <i className="fas fa-user-friends"></i>
             </div>
@@ -52,7 +52,7 @@ const MicrosoftSolutions = () => {
           </div>
 
           {/* Beispiel-Kachel 3 */}
-          <div className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
+          <div className="lg:max-w-[30%] bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow">
             <div className="text-4xl text-blue-600 mb-4">
               <i className="fas fa-clipboard-check"></i>
             </div>

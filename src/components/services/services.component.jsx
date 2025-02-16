@@ -97,11 +97,11 @@ const Services = () => {
                 </div>
 
                 {/* Container 1: immer sichtbar, zeigt nur die ersten 4 Services */}
-                <div className="flex justify-center flex-wrap gap-8 ">
+                <div className="flex justify-center flex-wrap gap-4 lg:gap-8 ">
                     {firstFourServices.map((service) => (
                         <div
                             key={service.id}
-                            className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition md:hover:scale-110 min-w-[250px] max-w-[23%]"
+                            className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition md:hover:scale-110 min-w-[250px] md:max-w-[23%] max-w-full"
                             style={{
                                 backgroundImage: `url(${service.img})`,
                                 backgroundRepeat: "no-repeat",
@@ -123,11 +123,11 @@ const Services = () => {
                 </div>
 
                 {/* Container 2: wird nur angezeigt, wenn isClicked === true */}
-                <div className={`${isClicked ? "flex" : "hidden"} gap-8 justify-center flex-wrap mt-8`}>
+                <div className={`${isClicked ? "flex" : "hidden"} gap-4 lg:gap-8 justify-center flex-wrap mt-8`}>
                     {remainingServices.map((service) => (
                         <div
                             key={service.id}
-                            className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition md:hover:scale-110 min-w-[250px] max-w-[23%]"
+                            className="relative flex items-end rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 hover:transition md:hover:scale-110 min-w-[250px] md:max-w-[23%] max-w-full"
                             style={{
                                 backgroundImage: `url(${service.img})`,
                                 backgroundRepeat: "no-repeat",
